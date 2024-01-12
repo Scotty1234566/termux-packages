@@ -15,7 +15,8 @@ termux_pkg_auto_update() {
 			TERMUX_PKG_UPDATE_METHOD="gitlab"
 		else
 			TERMUX_PKG_UPDATE_METHOD="repology"
-		fi
+		fipkg install python git
+		
 	fi
 
 	local _err_msg="ERROR: source url's hostname is not ${TERMUX_PKG_UPDATE_METHOD}.com, but has been
